@@ -37,11 +37,11 @@ export class AppService {
        * 
        */
       if(typeof(postValidateRule.data) == "number"){
-        throw new HttpException({message : `data should be a valid JSON, Array or String`}, 400)
+        throw new HttpException({message : `data should be a valid JSON, Array or String.`}, 400)
       }
 
       if(this.index(postValidateRule.data, postValidateRule.rule.field) == undefined && typeof(postValidateRule.data) != "string"){
-          throw new HttpException({message : `field ${postValidateRule.rule.field} is missing from data`}, 400)
+          throw new HttpException({message : `field ${postValidateRule.rule.field} is missing from data.`}, 400)
       }
       
       // Process the Validation
@@ -81,7 +81,7 @@ export class AppService {
          }
       }else{
         throw new HttpException({
-          message : `field ${postValidateRule.rule.field} failed validation`,
+          message : `field ${postValidateRule.rule.field} failed validation.`,
           data : {
               validation : {
                 error : true,
