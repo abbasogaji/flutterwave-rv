@@ -3,8 +3,11 @@
 </p>
 
   <p align="center">Flutterwave Assessment : A simple rule-validation API.</p>
-  <p align="center"> 
-    ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/abbasogaji/flutterwave-rv/CI/master)
+  <p align="center">
+
+  <a href="https://flutterwave-rv.herokuapp.com" target="_blank">
+    <img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/workflow/status/abbasogaji/flutterwave-rv/CI/master">
+  </a>
     <a href="https://codecov.io/gh/abbasogaji/nst-kimixbond">
       <img src="https://codecov.io/gh/abbasogaji/nst-kimixbond/branch/master/graph/badge.svg?token=QQC95CIAOR" />
     </a>
