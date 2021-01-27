@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: install deps
+      run: npm install 
     - name: Run unit test
       run: npm run test 
   build:
