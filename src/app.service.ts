@@ -36,9 +36,14 @@ export class AppService {
        *  }
        * 
        */
+      if(typeof(postValidateRule.data) == "number"){
+        throw new HttpException({message : `data should either be a valid JSON, Array or String`}, 400)
+      }
+
       if(this.index(postValidateRule.data, postValidateRule.rule.field) == undefined && typeof(postValidateRule.data) != "string"){
           throw new HttpException({message : `field ${postValidateRule.rule.field} is missing from data`}, 400)
       }
+      
       // Process the Validation
       switch(postValidateRule.rule.condition){
         case ConditionTypes.EQ:
@@ -99,8 +104,8 @@ export class AppService {
       if(obj == null){
         return undefined
       }
-      if (typeof obj == 'string' || typeof obj == 'number')
-          return obj
+      // if (typeof obj == 'string' || typeof obj == 'number')
+      //     return obj
       if (typeof is == 'string')
           return this.index(obj,is.split('.'));
       else if (is.length==0)

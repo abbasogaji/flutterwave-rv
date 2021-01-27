@@ -9,8 +9,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const response = ctx.getResponse<Response>();
     const status = exception.getStatus();
     let message =  Array.isArray(exception.response.message) ? exception.response.message[0] : exception.response.message
-    
-    if(message.includes("JSON")){
+    if(message.includes("JSON") && message.includes("Unexpected token")){
         message = "Invalid JSON payload passed."
     }
     const errorResponse : any = {
