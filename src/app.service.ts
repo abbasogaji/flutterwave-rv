@@ -49,7 +49,6 @@ export class AppService {
         break;
 
         case ConditionTypes.GTE:
-          console.log(this.index(postValidateRule.data, postValidateRule.rule.field))
           validationPassed = (this.index(postValidateRule.data, postValidateRule.rule.field) >= postValidateRule.rule.condition_value)
         break;
 
