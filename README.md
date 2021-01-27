@@ -48,5 +48,5 @@ $ npm run test:cov
 ## Stay in touch
 
 - Author - [Abbas Ogaji](https://abbasogaji.dev)
-- Website - [https://kimixbond.com](https://kimixbond.com/)
+- Website - [https://flutterwave-rv.herokuapp.com](https://flutterwave-rv.herokuapp.com)
 - Twitter - [@sudo_abbas](https://twitter.com/sudo_abbas)
