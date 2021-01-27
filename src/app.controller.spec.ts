@@ -12,12 +12,14 @@ describe('AppController', () => {
       providers: [{
         provide : AppService,
         useFactory : () => ({
-          getUser : jest.fn(() => ({data :{
-            name : "Abbas Ogaji",
-            github: "@abbasogaji",
-            email: "abbasogaji@gmail.com",
-            mobile: "09066240219",
-            twitter: "@sudo_abbas"
+          getUser : jest.fn(() => ({
+            message : "My Rule-Validation API",
+            data :{
+              name : "Abbas Ogaji",
+              github: "@abbasogaji",
+              email: "abbasogaji@gmail.com",
+              mobile: "09066240219",
+              twitter: "@sudo_abbas"
           }})),
           postValidateRule : jest.fn()
         })
@@ -34,7 +36,9 @@ describe('AppController', () => {
     });
 
     it('getUser() should return correct response', () => {
-      expect(appController.getUser()).toMatchObject({data :{
+      expect(appController.getUser()).toMatchObject({
+        message : "My Rule-Validation API",
+        data :{
         name : "Abbas Ogaji",
         github: "@abbasogaji",
         email: "abbasogaji@gmail.com",
