@@ -4,7 +4,7 @@
 
   <p align="center">Flutterwave Assessment : A simple rule-validation API.</p>
   <p align="center"> 
-    <a href="https://kimixbond.com" target="_blank"><img src="https://img.shields.io/circleci/build/github/abbasogaji/nst-kimixbond?token=caac330428d4cb01f470d173c61514b0d6c552b7" alt="CircleCI" /></a>
+    ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/abbasogaji/flutterwave-rv/CI/master)
     <a href="https://codecov.io/gh/abbasogaji/nst-kimixbond">
       <img src="https://codecov.io/gh/abbasogaji/nst-kimixbond/branch/master/graph/badge.svg?token=QQC95CIAOR" />
     </a>
