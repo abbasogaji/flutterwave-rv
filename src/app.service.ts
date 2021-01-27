@@ -10,6 +10,7 @@ export class AppService {
 
   getUser(){
     return {
+      message : "My Rule-Validation API",
       data :{
         name : "Abbas Ogaji",
         github: "@abbasogaji",
@@ -20,6 +21,10 @@ export class AppService {
     }
   }
 
+  
+  /**
+   * @param  {PostValidateRuleDto} postValidateRule
+   */
   postValidateRule(postValidateRule : PostValidateRuleDto){
       let validationPassed = false;
       /**
@@ -44,7 +49,6 @@ export class AppService {
         break;
 
         case ConditionTypes.GTE:
-          console.log(this.index(postValidateRule.data, postValidateRule.rule.field))
           validationPassed = (this.index(postValidateRule.data, postValidateRule.rule.field) >= postValidateRule.rule.condition_value)
         break;
 
