@@ -8,8 +8,8 @@
   <a href="https://flutterwave-rv.herokuapp.com" target="_blank">
     <img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/workflow/status/abbasogaji/flutterwave-rv/CI/master">
   </a>
-    <a href="https://codecov.io/gh/abbasogaji/nst-kimixbond">
-      <img src="https://codecov.io/gh/abbasogaji/nst-kimixbond/branch/master/graph/badge.svg?token=QQC95CIAOR" />
+    <a href="https://flutterwave-rv.herokuapp.com">
+      <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/abbasogaji/flutterwave-rv">
     </a>
    </p>
 
