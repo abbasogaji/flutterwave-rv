@@ -37,7 +37,7 @@ export class AppService {
        * 
        */
       if(typeof(postValidateRule.data) == "number"){
-        throw new HttpException({message : `data should either be a valid JSON, Array or String`}, 400)
+        throw new HttpException({message : `data should be a valid JSON, Array or String`}, 400)
       }
 
       if(this.index(postValidateRule.data, postValidateRule.rule.field) == undefined && typeof(postValidateRule.data) != "string"){
